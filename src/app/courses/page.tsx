@@ -64,7 +64,7 @@ export default function CoursesPage() {
       setEnrolledCourses((prev) => [...prev, courseId]);
 
       // Redirect user to the course page after enrollment
-      router.push(`/courses/${courseId}`);
+      router.push(`/course/${courseId}`);
     } catch (err: any) {
       alert(err.response?.data?.message || 'Enrollment failed');
     }

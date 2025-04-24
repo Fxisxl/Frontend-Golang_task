@@ -19,16 +19,25 @@ export default function NavBar() {
         Udemy
       </Link>
 
-      <div className="space-x-4">
-        {token ? (
+      <div className="flex items-center space-x-4">
+        {token && (
           <>
-            <button
-              onClick={handleLogout}
-              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
-            >
-              Logout
-            </button>
+            <Link href="/courses" className="hover:underline text-white">
+              All Courses
+            </Link>
+            <Link href="/my-courses" className="hover:underline text-white">
+              My Courses
+            </Link>
           </>
+        )}
+
+        {token ? (
+          <button
+            onClick={handleLogout}
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+          >
+            Logout
+          </button>
         ) : (
           <>
             <Link
