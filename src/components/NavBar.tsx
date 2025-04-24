@@ -14,7 +14,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-gray-900 text-white px-6 py-4 shadow-md flex justify-between items-center">
+    <nav className="bg-gray-900 text-white px-6 py-3 shadow-md flex justify-between items-center">
       <Link href="/" className="text-xl font-bold text-white">
         Udemy
       </Link>
